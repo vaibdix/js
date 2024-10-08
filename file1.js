@@ -1,14 +1,14 @@
 let str = "katappa"
 
-let val = str.slice(2,-1)
+let val = str.slice(2, -1)
 console.log(val)
 
-let val1 = str.slice(3,7)
+let val1 = str.slice(3, 7)
 console.log(val1)
 
 let str1 = "The quick brown fox jumps over the lazy dog.";
 
-console.log(str1.slice(10, 15)); 
+console.log(str1.slice(10, 15));
 console.log(str1.substring(10, 15));
 
 // difference in slice and substring
@@ -31,7 +31,7 @@ console.log(str.charCodeAt(4)); //gives ascii val
 
 try {
     console.log(a);
-    throw new Error( "erro raised")
+    throw new Error("erro raised")
 } catch (error) {
     console.log(err);
 }

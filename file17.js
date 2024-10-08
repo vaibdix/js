@@ -54,6 +54,7 @@ console.log(cd.getMonth());
 // }
 
 
+
 function generateOTP() {
     let result = '';
     const characters = '0123456789';
@@ -62,12 +63,11 @@ function generateOTP() {
     }
     return result;
 }
-
 console.log(generateOTP());
 
 
 function generateOTP() {
     return Math.floor(1000 + Math.random() * 9999).toString();
-  }
-  
-  console.log(generateOTP());
+}
+console.log(generateOTP());
+
