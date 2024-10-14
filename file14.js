@@ -443,3 +443,30 @@
 
 
 
+
+
+
+
+const obj = {
+    name: "John",
+    accNo: 123456,
+    contact: 9876543210,
+    balance: 10000,
+}
+
+obj.balance = 20000;
+console.log(obj.balance);
+
+// seal -- we can't add or delete properties but we can modify the existing properties
+Object.seal(obj);
+obj.balance = 30000;
+console.log(obj.balance);
+
+// freeze -- we can't add or delete properties and we can't modify the existing properties
+Object.freeze(obj);
+obj.balance = 40000;
+console.log(obj.balance);
+
+
+
+
