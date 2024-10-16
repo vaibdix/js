@@ -1,6 +1,7 @@
 // Promise
 // promises are obj in js
 // promises are used to handle async task
+// was introduced to overcome callback hell
 // promise has 3 states pending, resolve, reject
 // pending -- when it is neither resolved nor rejected
 // resolved -- when promise if fullfiled,
