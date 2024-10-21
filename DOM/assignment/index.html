@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation and Event Handling Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        #toggleStyleDiv {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        .alternate-style {
+            background-color: lightgreen;
+            border: 2px dashed red;
+        }
+        #hoverParagraph:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Manipulation and Event Handling Tasks</h1>
+
+    <!-- 1. Change Background Color -->
+    <button id="changeBackgroundBtn">Change Background</button>
+
+    <!-- 2. Text Update -->
+    <p id="updateTextParagraph">Click the button to change this text.</p>
+    <button id="updateTextBtn">Update Text</button>
+
+    <!-- 3. Hide/Show Element -->
+    <div id="hideShowDiv">This is a div that can be hidden or shown.</div>
+    <button id="hideShowBtn">Hide/Show</button>
+
+    <!-- 4. Add New Item to List -->
+    <input type="text" id="newItemInput" placeholder="Enter new item">
+    <button id="addItemBtn">Add Item</button>
+    <ul id="itemList"></ul>
+
+    <!-- 5. Remove Last Item from List -->
+    <ul id="predefinedList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button id="removeLastItemBtn">Remove Last Item</button>
+
+    <!-- 6. Toggle Class -->
+    <div id="toggleStyleDiv"></div>
+    <button id="toggleStyleBtn">Toggle Style</button>
+
+    <!-- 7. Change Image Source -->
+    <img id="changeableImage" src="https://via.placeholder.com/150" alt="Changeable Image">
+    <button id="changeImage1Btn">Change to Image 1</button>
+    <button id="changeImage2Btn">Change to Image 2</button>
+
+    <!-- 8. Create Elements Dynamically -->
+    <button id="addParagraphBtn">Add Paragraph</button>
+
+    <!-- 9. Disable Button After Click -->
+    <button id="disableOnClickBtn">Click Me</button>
+
+    <!-- 10. Display Input Text -->
+    <input type="text" id="displayInputField" placeholder="Type something...">
+    <div id="displayInputText"></div>
+
+    <!-- 11. Change Text Color on Hover -->
+    <p id="hoverParagraph">Hover over me to change my color!</p>
+
+    <!-- 12. Display Current Date and Time -->
+    <button id="showDateTimeBtn">Show Date and Time</button>
+    <div id="dateTimeDisplay"></div>
+
+    <!-- 13. Remove Element -->
+    <div id="removableElement">This element can be removed.</div>
+    <button id="removeElementBtn">Remove Element</button>
+
+    <!-- 14. Count Button Clicks -->
+    <button id="clickCounterBtn">Click Counter</button>
+    <p id="clickCountDisplay">Button clicked 0 times</p>
+
+    <!-- 15. Display Window Width -->
+    <div id="windowWidthDisplay"></div>
+
+    <!-- 16. Add Class to All Elements -->
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <button id="addClassBtn">Add Class</button>
+
+    <!-- 17. Input Validation -->
+    <form id="validationForm">
+        <input type="text" id="validationInput" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="validationError"></div>
+
+    <!-- 18. Change Font Size -->
+    <p id="changeFontSizeParagraph">This paragraph's font size can be increased.</p>
+    <button id="increaseFontSizeBtn">Increase Font Size</button>
+
+    <!-- 21. Button Hover Event -->
+    <button id="hoverButton">Hover Me</button>
+
+    <!-- 22. Form Submission Event -->
+    <form id="submissionForm">
+        <input type="text" id="submissionInput" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="submissionError"></div>
+
+    <!-- 23. Keyboard Event -->
+    <input type="text" id="keyboardEventInput" placeholder="Press Enter">
+
+    <!-- 24. Double-Click Event -->
+    <div id="doubleClickDiv" style="width: 200px; height: 100px; background-color: lightgray;">Double-click me</div>
+
+    <!-- 25. Key Press Counter -->
+    <input type="text" id="keyPressInput" placeholder="Type here">
+    <p id="keyPressCount">Key pressed 0 times</p>
+
+    <!-- 26. Mouse Movement Tracker -->
+    <div id="mouseTracker">Mouse position: X: 0, Y: 0</div>
+
+    <!-- 27. Right-Click Event -->
+    <div id="rightClickElement" style="width: 200px; height: 100px; background-color: lightblue;">Right-click me</div>
+
+    <!-- 28. Mouse Over Event -->
+    <p id="mouseOverParagraph">Mouse over me to change my text</p>
+
+    <!-- 29. Focus Event -->
+    <input type="text" id="focusInput" placeholder="Click me to focus">
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
