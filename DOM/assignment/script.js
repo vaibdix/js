@@ -192,3 +192,14 @@ focusInput.addEventListener('focus', function() {
 focusInput.addEventListener('blur', function() {
   this.style.borderColor = '';
 });
+
+
+
+
+
+// this -- instead of e
+let btn = document.querySelector('button')
+btn.addEventListener('click', function() {
+  this.style.backgroundColor = 'red'
+})
+

@@ -21,7 +21,7 @@ console.log(localStorage)
 // sessionStorage.clear()
 
 let newvarlocal = localStorage.getItem('localuser')
-console.log(newvar)
+console.log(newvarlocal)
 
 let newvarsession = sessionStorage.getItem('username')
 console.log(newvarsession)
